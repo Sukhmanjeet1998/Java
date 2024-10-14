@@ -54,7 +54,6 @@ import java.lang.*;
 
 // }
 
-
 // ................................................................................
 
 /*
@@ -64,8 +63,28 @@ import java.lang.*;
  * to the items in the bill as an advanced problem)
  */
 
-// { Pending to do }
+public class Problems {
 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter cose of Pencil");
+        float pencil = sc.nextFloat();
+        System.out.println("Enter cose of Pen");
+        float pen = sc.nextFloat();
+        System.out.println("Enter cose of Eraser");
+        float eraser = sc.nextFloat();
+
+        float total_item_price = pencil + pen + eraser;
+        System.out.println("Total item price is: " + total_item_price);
+
+        float tax = total_item_price * 0.18f;
+        float total_item_price_with_tax = total_item_price + tax;
+
+        System.out.println("Total item price with 18% GST is: " + total_item_price_with_tax);
+
+    }
+
+}
 
 // ................................................................................
 
@@ -80,8 +99,7 @@ import java.lang.*;
  * result = (f*b) + (i%c) - (d*s);
  */
 
-// Answer:  The result variable will be of double type because oftype conversion.
-
+// Answer: The result variable will be of double type because oftype conversion.
 
 // ................................................................................
 
@@ -92,10 +110,10 @@ import java.lang.*;
 
 // public class Problems {
 
-//     public static void main(String[] args) {
-//         int $my = 5;
-//         System.out.println($my);
-//     }
+// public static void main(String[] args) {
+// int $my = 5;
+// System.out.println($my);
+// }
 
 // }
 
@@ -103,6 +121,5 @@ import java.lang.*;
 // error.NamesofvariablesarecalledidentifiersinJava.Identifierrulesays,identifierscanstartwithany
 // alphabet or underscore (“_”) or dollar (“$”).According to the rule the given
 // variable name is a valid identifier.
-
 
 // ................................................................................
