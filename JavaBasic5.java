@@ -59,9 +59,9 @@ public class JavaBasic5 {
         * if (myIncome < 500000) {
         * myTax = 0;
         * }else if (myIncome >= 500000 && myIncome < 1000000) {
-        * myTax = (int) (myIncome * 0.2);
+        * myTax = (int) (myIncome * 0.2);  // convet double to int {Type Casting}
         * }else{
-        * myTax = (int) (myIncome * 0.3);
+        * myTax = (int) (myIncome * 0.3);  // convet double to int {Type Casting}
         * }
         * 
         * System.out.println("Your Tax is: "+ myTax + "!");
@@ -119,7 +119,6 @@ public class JavaBasic5 {
         * break;
         * default:
         * System.out.println("Invalid operator!");
-        * break;
         * }
         */
         
