@@ -1,0 +1,42 @@
+import java.util.*;
+
+public class JavaBasic7{
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number!");
+        int num = sc.nextInt();
+        System.out.println("Enter a character!");
+        char ch = sc.next().charAt(0);
+        sc.close();
+        
+        for (int i = 1; i <= num; i++) {
+            for (int j = 1; j <= i ; j++) {
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+        for (int i = 1; i <= num; i++) {
+            for (int j = 1; j <= i ; j++) {
+                System.out.print(j);
+            }
+            System.out.print("\n");
+        }
+
+        for (int i = num; i >= 1; i--) {
+            for (int j = i; j >= 1; j--) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        for (int i = 1; i <= 4; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(ch);
+                ch++;
+
+            }
+            System.out.println();
+        }
+    }
+
+}
