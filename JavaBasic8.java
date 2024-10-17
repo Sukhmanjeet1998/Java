@@ -40,6 +40,9 @@ public class JavaBasic8 {
     public static void main(String args[]) {
         int a = 3;
         int b = 4;
+        int n = 5;
+        int r = 2;
+        int b_coff = ( factorial(n)/(factorial(r) * factorial(n-r)) );
 
         message();
 
@@ -53,5 +56,7 @@ public class JavaBasic8 {
         System.out.println("Product of " + a + " and " + b + " is: " + product(a, b));
 
         System.out.println("Factorial of " + b + "  is: " + factorial(b));
+
+        System.out.println("Binominal Coefficient is: " + b_coff);
     }
 }
