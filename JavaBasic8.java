@@ -147,8 +147,9 @@ public class JavaBasic8 {
 
         // isPrime();
         // primeAre();
-        example();
-        example2(); // 5
+        
+        example();    // doubt1
+        example2(); // 5   // doubt2 
 
         if (1 == 1) {
 
