@@ -60,7 +60,7 @@ public class JavaBasic8 {
                 System.out.println(num + " is not a Prime number!");
             }
         }
-        
+
     }
 
     public static int checkPrime(int num) {
@@ -69,20 +69,21 @@ public class JavaBasic8 {
         int result = 1;
         while (div < n) {
             if (n % div == 0) {
-                return 0; 
+                return 0;
             }
             div++;
         }
         return result;
     }
-    public static void primeAre(){
+
+    public static void primeAre() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the digit till where you want to find how much prime number there exits!");
         int num = sc.nextInt();
         sc.close();
-        if(num <= 1){
+        if (num <= 1) {
             System.out.println("Least prime number is 2, Please enter valid number.");
-        }else{
+        } else {
             while (num >= 2) {
                 int ans = checkPrime(num);
                 if (ans == 1) {
@@ -92,6 +93,34 @@ public class JavaBasic8 {
             }
         }
     }
+
+    public static void example() {
+
+        int i, j;
+
+        i = 100;
+
+        j = 300;
+
+        while (++i < --j)
+            ;
+
+        System.out.println(i);
+
+    }
+
+    public static void example2() {
+
+        int a = 3;
+
+        int b = 6;
+
+        int result = (~a & b) | (a & ~b);
+
+        System.out.println(result);
+
+    }
+
     // main method
     public static void main(String args[]) {
         int a = 3;
@@ -109,15 +138,22 @@ public class JavaBasic8 {
         System.out.println("Value of a is: " + a);
         System.out.println("Value of b is: " + b);
 
-        // System.out.println("Product of " + a + " and " + b + " is: " + product(a, b));
+        // System.out.println("Product of " + a + " and " + b + " is: " + product(a,
+        // b));
 
-        // System.out.println("Factorial of " + b + "  is: " + factorial(b));
+        // System.out.println("Factorial of " + b + " is: " + factorial(b));
 
         System.out.println("Binominal Coefficient is: " + b_coff);
 
         // isPrime();
         // primeAre();
+        example();
+        example2(); // 5
 
-        
+        if (1 == 1) {
+
+            System.out.println("Navin Reddy");
+
+        }
     }
 }
