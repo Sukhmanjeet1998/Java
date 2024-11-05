@@ -8,6 +8,10 @@ class Calculator {
         int result = num1 + num2;
         return result;
     }
+
+    public String message(){
+        return "Hi How's Java!";
+    }
 }
 
 public class JavaBasic9 {
@@ -17,6 +21,7 @@ public class JavaBasic9 {
         int n2 = 3;
         int result = calc.add(n2, n1);
         System.out.println(result);
+        System.out.println(calc.message());
     }
 
 }
