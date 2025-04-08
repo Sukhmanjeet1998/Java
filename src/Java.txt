@@ -1,0 +1,65 @@
+
+........................................................................................................................
+
+//Why Getter and Setter
+// Control Over Data Access
+// 1) With setters, you can add validations, such as ensuring salary is not negative
+// 2) If you allow direct access (obj.salary = 5000;), any part of the program can modify it without restrictions.
+
+//Data Encapsulation & Abstraction
+// 1) By making fields private and providing public getter and setter methods, we hide the internal representation of the object.
+// 2) This ensures that the internal data cannot be changed directly, reducing unintended modifications and maintaining data integrity.
+
+//Flexibility & Maintainability
+// 1) If in the future, the way salary is calculated changes (e.g., adding bonuses or deductions), you only need to modify the getter method instead of updating multiple places in your code.
+
+//Read-Only or Write-Only Fields
+// 1) If you don’t want a field to be modified, you can remove the setter, making it read-only.
+// 2) Similarly, if you only want to set a value but not allow retrieval, you can make it write-only by removing the getter.
+
+// Enhancing Debugging & Logging
+// 1) You can add logging inside getters and setters to track changes:
+
+// While you can directly access fields without getters and setters, using them provides better security, control, flexibility, and maintainability. That’s why using getter and setter methods is considered a best practice in Java. 🚀
+
+
+........................................................................................................................
+Difference
+
+public void setEmpId(int id){
+            empId = id;
+        }
+public int setEmpId(int id){
+            empId = id;
+            return empId;
+        }
+
+And when to use when -->
+
+Void
+✅ Best Practice for Setters
+✅ Follows JavaBean conventions
+✅ Simply sets the value, without returning anything
+
+When to Use?
+When you just need to assign a value to a variable.
+
+When following standard Java conventions.
+
+Works well with frameworks like Hibernate, Spring, and JavaBeans.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Return type like int
+✅ Returns the newly assigned value
+⚠️ Not a typical setter pattern
+
+When to Use?
+If the caller needs confirmation of the assigned value.
+
+If you want to log or process the new value immediately after setting it.
+
+Rarely used, as setters usually don’t return values.
+
+........................................................................................................................
+
