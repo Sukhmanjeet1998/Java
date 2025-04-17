@@ -1,18 +1,17 @@
-package calc;
-
-import java.util.Scanner;
+package Electronic.calc;
 
 class SimpleCalculator{
     protected final int a,b;
     private int c = 6;
     public int d = 7;
     int e = 77;
+    protected int f = 80;
     SimpleCalculator(int a, int b){
             this.a = a;
             this.b = b;
-        sumTwoNumber();
+        sumTwoNumberSi();
     }
-    public void sumTwoNumber(){
+    public void sumTwoNumberSi(){
         System.out.println("Simple Calculator");
         System.out.format("Sum of %d and %d is: %d\n",a,b,(a+b));
     }
@@ -21,10 +20,9 @@ class SimpleCalculator{
 class ScientificCalculator extends SimpleCalculator{
     ScientificCalculator(int a, int b){
         super(a,b);
-        sumTwoNumber();
+        sumTwoNumberSc();
     }
-    @Override
-    public void sumTwoNumber(){
+    public void sumTwoNumberSc(){
         System.out.println("Scientific Calculator");
         System.out.format("Sum of sin %d and sin %d is: %f\n",a,b,Math.sin(a+b));
 
@@ -34,23 +32,26 @@ class ScientificCalculator extends SimpleCalculator{
 class HybridCalculator extends ScientificCalculator{
     HybridCalculator(int a, int b){
         super(a,b);
-        sumTwoNumber();
+        sumTwoNumberHy();
     }
-    @Override
-    public void sumTwoNumber(){
+    public void sumTwoNumberHy(){
         System.out.println("Hybrid Calculator");
         System.out.format("Sum of %d and %d is: %d\n",a,b,(a+b));
         System.out.format("Sum of sin %d and sin %d is: %f\n",a,b,Math.sin(a+b));
 //        System.out.println(c);
         System.out.println(d);
         System.out.println(e);
+        System.out.println(f);
     }
 }
+
 public class Calculator {
-    protected int proInt = 6 ;
-    int defInt = 6 ;
-    public int pubInt = 777;
+    protected static int proInt = 6 ;
+    static int defaultInt = 6 ;
+    public static int pubInt = 777;
+
     public static void main(String[] args) {
+        /*
         Scanner sc = new Scanner(System.in);
         int a,b;
         System.out.println("This is a calculator class");
@@ -59,6 +60,12 @@ public class Calculator {
         System.out.println("Enter second number:");
         b = sc.nextInt();
         HybridCalculator cal = new HybridCalculator(a,b);
+//        System.out.println("C: " + cal.c);
+        System.out.println("D: " + cal.d);
         System.out.println("E: " + cal.e);
+        System.out.println("F: " + cal.f);
+        */
+        System.out.println("I am a main method");
+        System.out.println(proInt);
     }
 }
