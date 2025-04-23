@@ -1,4 +1,4 @@
-// Multi Threading
+// Multi Threading (I na process you need to achieve multiple task)
 class MyThread1 extends Thread{
     int i = 1;
     @Override

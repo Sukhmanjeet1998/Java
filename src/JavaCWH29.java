@@ -1,5 +1,6 @@
 // Thread Using Runnable Interface
 class MyThread implements Runnable{
+    @Override
     public void run(){
         int i = 1;
         while (i<=200){
@@ -7,8 +8,13 @@ class MyThread implements Runnable{
             i++;
         }
     }
+
+    public void start() {
+
+    }
 }
 class MyThread_2 implements Runnable{
+    @Override
     public void run(){
         int i = 1;
         while (i<=200){
